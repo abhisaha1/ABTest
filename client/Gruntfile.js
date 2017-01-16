@@ -35,7 +35,7 @@ module.exports = function(grunt) {
                 options: {
                     replacements: [{
                         pattern: '$HOST_URL',
-                        replacement: "https://abclient.datastars.de/"
+                        replacement: "[ENTER-VALID-URL]"
                     }]
                 }
             }
