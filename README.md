@@ -1,3 +1,43 @@
+# (GitHub-Flavored) Markdown Editor
+
+Basic useful feature list:
+
+ * Ctrl+S / Cmd+S to save the file
+ * Ctrl+Shift+S / Cmd+Shift+S to choose to save as Markdown or HTML
+ * Drag and drop a file into here to load it
+ * File contents are saved in the URL so you can share files
+
+
+I'm no good at writing sample / filler text, so go write something yourself.
+
+Look, a list!
+
+ * foo
+ * bar
+ * baz
+
+And here's some code! :+1:
+
+```javascript
+$(function(){
+  $('div').html('I am a div.');
+});
+```
+
+This is [on GitHub](https://github.com/jbt/markdown-editor) so let me know if I've b0rked it somewhere.
+
+
+Props to Mr. Doob and his [code editor](http://mrdoob.com/projects/code-editor/), from which
+the inspiration to this, and some handy implementation hints, came.
+
+### Stuff used to make this:
+
+ * [markdown-it](https://github.com/markdown-it/markdown-it) for Markdown parsing
+ * [CodeMirror](http://codemirror.net/) for the awesome syntax-highlighted editor
+ * [highlight.js](http://softwaremaniacs.org/soft/highlight/en/) for syntax highlighting in output code blocks
+ * [js-deflate](https://github.com/dankogai/js-deflate) for gzipping of data to make it fit in URLs
+
+
 # AB Testing Tool
 
 Basic useful feature list:
@@ -8,10 +48,22 @@ Basic useful feature list:
 
 This readme document is not finished. It will never be finished.
 
+## Setup
+The tool consits of backend (dashboard) and a client(snippet). The backend is powered by php and the client is powered by nodejs server. The client resides in the client folder and the dashboard resides in the src folder.
+
+
+## Configuration
+Goto config folder and add the database credentials. This credentials are for the backend dashboard.
+Then goto client/dev/config/mysql.config.js and add the database credentials. I know its the wrong way to add credentials and they should reside in one folder. But deal with this or change it in a more smarter say.
+
+There is a queries.sql file. Execute that in your database.
+
+For editing the client, edit the client/public/js/Client.js file and run grunt. Yes I know it should be in a different folder but its ok for now.
+
 ## Installation:
 
 ```
-git clone https://github.com/rocket-internet-berlin/ABTEST.git
+git clone git@github.com:ajaxtown/ABTest.git
 cd ABTest
 ```
 
@@ -35,6 +87,5 @@ node server.js
 
 
 ## Get in touch
-For any suggestions or troubleshooting, please contact me -
+At this point I wont be able to provide any support except the installation.
 
-Abhi - abhishek.saha@rocket-internet.de
