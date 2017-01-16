@@ -33,6 +33,7 @@ class CampaignService
     public function save($data)
     {
         $defaults = $this->getDefaultTargets();
+        $data['targets']['url'] = !isset($data['targets']['url']) ? $defaults['url']: array_merge_recursive($defaults['url'],$data['targets']['url']);
         $data['targets']['user'] = array_merge($defaults['user'],$data['targets']['user']);
         $data['targets']['ip'] = isset($data['targets']['ip']) ? array_merge($defaults['ip'],$data['targets']['ip']) : $defaults['ip'];
         $data['targets']['browser'] = array_merge($defaults['browser'],$data['targets']['browser']);

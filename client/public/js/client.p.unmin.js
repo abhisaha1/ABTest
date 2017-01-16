@@ -791,11 +791,6 @@ var ABTest = (function (window, document, undefined) {
                         }
                     });
 
-                    //document.getElementsByTagName('html')[0].style.display = "block";
-                    //var elem = document.getElementById("_abtest_path_hides");
-                    //if(elem !== null) {
-                    //    elem.parentElement.removeChild(elem);
-                    //}
                 }
 
             } catch (e) {
@@ -807,12 +802,6 @@ var ABTest = (function (window, document, undefined) {
 
             eval(js);
             callback(true);
-            //this.jQueryLoaded(function(status) {
-            //    if(status) {
-            //        eval(js);
-            //    }
-            //    callback(status);
-            //})
         },
         runCSS: function (css) {
             var styleElement = document.createElement("style");

@@ -259,79 +259,79 @@
 
                 </div>
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#ip-block">
-                                <i class="glyphicon glyphicon-plus"></i> IP Settings</a>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="ip-block" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Include these IPs</label>
-                                <div class="col-md-4 controls">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <input id="include_ips" type="text" class="ip-block-input tagsinput" value="{{ data.ip.include_ips|join(',') }}" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Exclude these IPs</label>
-                                <div class="col-md-4 controls">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <input id="exclude_ips" type="text" class="ip-block-input tagsinput" value="{{ data.ip.exclude_ips|join(',') }}" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!--<div class="panel panel-default">-->
+                    <!--<div class="panel-heading">-->
+                        <!--<h4 class="panel-title">-->
+                            <!--<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#ip-block">-->
+                                <!--<i class="glyphicon glyphicon-plus"></i> IP Settings</a>-->
+                            <!--</a>-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div id="ip-block" class="panel-collapse collapse">-->
+                        <!--<div class="panel-body">-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-3 control-label">Include these IPs</label>-->
+                                <!--<div class="col-md-4 controls">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-12">-->
+                                            <!--<input id="include_ips" type="text" class="ip-block-input tagsinput" value="{{ data.ip.include_ips|join(',') }}" />-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-3 control-label">Exclude these IPs</label>-->
+                                <!--<div class="col-md-4 controls">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-12">-->
+                                            <!--<input id="exclude_ips" type="text" class="ip-block-input tagsinput" value="{{ data.ip.exclude_ips|join(',') }}" />-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#language-block">
-                                <i class="glyphicon glyphicon-plus"></i> Language Settings</a>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="language-block" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">Only Allow codes</label>
-                                <div class="col-md-4 controls">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <input id="allowed_languages" type="text" class="language-block-input tagsinput" value="{{ data.language.allowed_languages|join(',') }}" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="col-sm-3 control-label">But Exclude codes</label>
-                                <div class="col-md-4 controls">
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <input id="exclude_languages" type="text" class="language-block-input tagsinput" value="{{ data.language.exclude_languages|join(',') }}" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- trigger modal -->
-                            <a href="#" data-toggle="modal" data-target="#modal-browser-language">
-                                Refer Language Codes
-                            </a>
-                        </div>
-                    </div>
+                <!--<div class="panel panel-default">-->
+                    <!--<div class="panel-heading">-->
+                        <!--<h4 class="panel-title">-->
+                            <!--<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#language-block">-->
+                                <!--<i class="glyphicon glyphicon-plus"></i> Language Settings</a>-->
+                            <!--</a>-->
+                        <!--</h4>-->
+                    <!--</div>-->
+                    <!--<div id="language-block" class="panel-collapse collapse">-->
+                        <!--<div class="panel-body">-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-3 control-label">Only Allow codes</label>-->
+                                <!--<div class="col-md-4 controls">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-12">-->
+                                            <!--<input id="allowed_languages" type="text" class="language-block-input tagsinput" value="{{ data.language.allowed_languages|join(',') }}" />-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="form-group">-->
+                                <!--<label class="col-sm-3 control-label">But Exclude codes</label>-->
+                                <!--<div class="col-md-4 controls">-->
+                                    <!--<div class="row">-->
+                                        <!--<div class="col-xs-12">-->
+                                            <!--<input id="exclude_languages" type="text" class="language-block-input tagsinput" value="{{ data.language.exclude_languages|join(',') }}" />-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; trigger modal &ndash;&gt;-->
+                            <!--<a href="#" data-toggle="modal" data-target="#modal-browser-language">-->
+                                <!--Refer Language Codes-->
+                            <!--</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
