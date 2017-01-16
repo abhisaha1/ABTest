@@ -18,7 +18,7 @@ Then goto client/dev/config/mysql.config.js and add the database credentials. I 
 
 There is a queries.sql file. Execute that in your database.
 
-For editing the client, edit the client/public/js/Client.js file and run grunt. Yes I know it should be in a different folder but its ok for now.
+For editing the client, edit the client/public/js/Client.js file and run grunt. Yes I know it should be in a different folder but its ok for now. Edit client/Gruntfile.js and replace [ENTER-VALID-URL] with the correct production url of nodejs.
 
 ## Installation:
 
